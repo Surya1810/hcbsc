@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('pengprov', 100);
             $table->text('prestasi')->nullable();
 
-            $table->string('qr_code');
+            $table->string('qr_code')->nullable();
             $table->string('image')->nullable(); // nama file foto
             $table->string('ktp')->nullable();   // nama file KTP (pdf)
             $table->string('kta')->nullable();   // nama file KTA (pdf)

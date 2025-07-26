@@ -66,7 +66,7 @@
                 <a class="navbar-brand" href="{{ route('landing') }}">
                     <img src="{{ asset('assets/logo/hcb_main.webp') }}" alt="HCBSC" height="50">
                 </a>
-                <h4 class="text-warning">HCB Shooting Club</h4>
+                <h4 class="hcb-link">HCB Shooting Club</h4>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

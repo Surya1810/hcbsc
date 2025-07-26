@@ -134,8 +134,8 @@ class AnggotaController extends Controller
         $tglLahir = \Carbon\Carbon::parse($anggota->birth)->format('d-m');
         $nomor = "HCBSC-{$id}.{$tglLahir}";
         // Buat QR code untuk keanggotaan
-        $qrPath = 'qrcodes/' . $nomor . '.png';
-        Storage::disk('public')->put($qrPath, QrCode::format('png')->size(300)->generate(route('keanggotaan.cek', ['query' => $nomor])));
+        $qrPath = 'qrcodes/' . $nomor . '.svg';
+        Storage::disk('public')->put($qrPath, QrCode::format('svg')->size(300)->generate(route('keanggotaan.cek', ['query' => $nomor])));
 
         $anggota->status = 'verified';
         $anggota->nomor = $nomor;

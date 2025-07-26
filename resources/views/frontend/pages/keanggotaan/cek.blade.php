@@ -31,8 +31,8 @@
                                         </form>
                                     </div>
                                     <div class="col-md-4 text-center mb-3 mb-md-0">
-                                        <img src="{{ asset('assets/logo/hcb_bw.webp') }}" alt="HCB Logo" class="img-fluid"
-                                            width="150">
+                                        <img src="{{ asset('assets/logo/hcb_bw.webp') }}" alt="HCB Logo"
+                                            class="img-fluid mt-3" width="150">
                                     </div>
                                 </div>
 
@@ -40,7 +40,65 @@
                                 @if (request()->has('query'))
                                     @if ($anggota)
                                         @if ($anggota->status === 'verified')
-                                            {{-- TAMPILKAN DATA DIRI DAN KTA --}}
+                                            <div class="row mt-4">
+                                                {{-- FOTO DAN QR --}}
+                                                <div class="col-md-4 text-center">
+                                                    @if ($anggota->image)
+                                                        <img src="{{ asset('storage/anggota/' . $anggota->image) }}"
+                                                            alt="Foto Anggota" class="img-fluid rounded mb-3"
+                                                            style="max-width: 100%; height: auto;">
+                                                    @endif
+
+                                                    @if ($anggota->nomor)
+                                                        @if (file_exists(public_path('storage/qrcodes/' . $anggota->nomor . '.svg')))
+                                                            <img src="{{ asset('storage/qrcodes/' . $anggota->nomor . '.svg') }}"
+                                                                alt="QR Code" class="img-fluid my-3"
+                                                                style="max-width: 200px;">
+                                                        @endif
+                                                    @endif
+                                                </div>
+
+                                                {{-- DATA DIRI --}}
+                                                <div class="col-md-8">
+                                                    <div class="card bg-dark text-white border-light">
+                                                        <div class="card-body">
+                                                            <h4 class="mb-3 text-warning"><strong>Data Diri Anggota</strong>
+                                                            </h4>
+                                                            <dl class="row mb-0">
+                                                                <dt class="col-sm-4">Nomor</dt>
+                                                                <dd class="col-sm-8">{{ $anggota->nomor }}</dd>
+
+                                                                <dt class="col-sm-4">Nama</dt>
+                                                                <dd class="col-sm-8">{{ $anggota->name }}</dd>
+
+                                                                <dt class="col-sm-4">NIK</dt>
+                                                                <dd class="col-sm-8">{{ $anggota->nik }}</dd>
+
+                                                                <dt class="col-sm-4">Tanggal Lahir</dt>
+                                                                <dd class="col-sm-8">{{ $anggota->birth->format('d-m-Y') }}
+                                                                </dd>
+
+                                                                <dt class="col-sm-4">Alamat</dt>
+                                                                <dd class="col-sm-8">{{ $anggota->address }}</dd>
+
+                                                                <dt class="col-sm-4">Nomor HP</dt>
+                                                                <dd class="col-sm-8">{{ $anggota->phone }}</dd>
+                                                                <dt class="col-sm-4">Pengcab</dt>
+                                                                <dd class="col-sm-8">{{ $anggota->pengcab }}</dd>
+                                                                <dt class="col-sm-4">Pengprov</dt>
+                                                                <dd class="col-sm-8">{{ $anggota->pengprov }}</dd>
+                                                                <dt class="col-sm-4">Prestasi</dt>
+                                                                <dd class="col-sm-8">
+                                                                    @isset($anggota->prestasi)
+                                                                    @else
+                                                                        -
+                                                                    @endisset
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         @elseif($anggota->status === 'pending')
                                             <div class="alert alert-warning mt-3">Status: Pendaftaran Anda masih dalam
                                                 proses verifikasi.</div>
