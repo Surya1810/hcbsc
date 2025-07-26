@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Anggota extends Model
 {
-    //
+    protected $casts = [
+        'birth' => 'datetime',
+    ];
 }

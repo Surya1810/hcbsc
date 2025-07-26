@@ -23,7 +23,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('frontend.admin.pages.news.create_news');
     }
 
     /**

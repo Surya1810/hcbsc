@@ -94,6 +94,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{ route('berita') }}">Berita</a></li>
                                 <li><a class="dropdown-item" href="{{ route('agenda') }}">Agenda Kegiatan</a></li>
+                                <li><a class="dropdown-item" href="{{ route('galeri') }}">Galeri</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -112,6 +113,27 @@
                             <a class="nav-link {{ request()->is('hubungi-kami*') ? 'active' : '' }}"
                                 href="{{ route('contact') }}">Hubungi kami</a>
                         </li>
+                        @auth
+                            <li class="nav-item dropdown">
+                                <button
+                                    class="nav-link dropdown-toggle {{ request()->is('keanggotaan*') ? 'active' : '' }}"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ route('berita.create') }}">Buat Berita</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('agenda.create') }}">Buat Agenda</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('anggota.index') }}">Cek Pendaftaran</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
+                                            @csrf
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endauth
                     </ul>
                 </div>
             </div>
@@ -184,6 +206,11 @@
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
+                                <a href="{{ route('galeri') }}" class="nav-link p-0 text-white">
+                                    Galeri
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
                                 <a href="{{ route('contact') }}" class="nav-link p-0 text-white">
                                     Hubungi kami
                                 </a>
@@ -204,6 +231,12 @@
                             <li class="nav-item mb-2"><a href="{{ route('keanggotaan.atribut') }}"
                                     class="nav-link p-0 text-white">Atribut</a>
                             </li>
+                            @auth
+                            @else
+                                <li class="nav-item mb-2"><a href="{{ route('login') }}"
+                                        class="nav-link p-0 text-white">Login - Admin</a>
+                                </li>
+                            @endauth
                         </ul>
                     </div>
                 </div>
@@ -248,6 +281,17 @@
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- DataTables -->
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
 
     <!-- Navbar -->
     <script>

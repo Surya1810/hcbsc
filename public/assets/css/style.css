@@ -31,8 +31,8 @@ body::-webkit-scrollbar {
 
 /* FORM CONTROL FOCUS */
 .form-control:focus {
-    border-color: #0055ff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 85, 255, 0.35);
+    border-color: rgba(108, 16, 17, 0.75);
+    box-shadow: 0 0 0 0.35rem rgba(108, 16, 17, 0.35);
 }
 
 /* Login Page */
@@ -45,11 +45,10 @@ body::-webkit-scrollbar {
     background-color: #fff;
 }
 .login_card {
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(10px);
-    border-color: rgba(0, 85, 255, 0.75);
-    box-shadow: 0 0 0 0.35rem rgba(0, 85, 255, 0.25);
+    border-color: rgba(108, 16, 17, 0.75);
+    box-shadow: 0 0 0 0.35rem rgba(108, 16, 17, 0.25);
 }
 
 /* Back to Top */
@@ -61,7 +60,6 @@ body::-webkit-scrollbar {
     width: 75px;
     font-size: 23px;
     border-radius: 50%;
-    /* box-shadow: 2px 2px 3px #353535; */
     background-color: #000000;
     border: 0px;
 }
@@ -135,6 +133,10 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.heroes_main img {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
 .heroes {

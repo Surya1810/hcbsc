@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Agenda;
+use App\Models\Anggota;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -10,9 +11,10 @@ class PageController extends Controller
 {
     public function landing()
     {
-        $latest_news = Post::latest()->take(6)->get();
+        $latest = Post::latest()->take(3)->get();
+        $beritas = Post::latest()->skip(3)->take(60)->paginate(6);
 
-        return view('frontend.pages.landing', compact('latest_news'));
+        return view('frontend.pages.landing', compact('latest', 'beritas'));
     }
 
     public function about()
@@ -22,14 +24,29 @@ class PageController extends Controller
 
     public function berita()
     {
-        return view('frontend.pages.informasi.berita');
+        $latest = Post::latest()->take(3)->get();
+        $beritas = Post::latest()->skip(3)->take(60)->paginate(6);
+
+        return view('frontend.pages.informasi.berita', compact('latest', 'beritas'));
+    }
+    public function detail_berita($slug)
+    {
+        $latest = Post::latest()->take(3)->get();
+        $news = Post::where('slug', $slug)->first();
+
+        return view('frontend.pages.informasi.detail_berita',  compact('latest', 'news'));
     }
 
     public function agenda()
     {
         $agendas = Agenda::all();
 
-        return view('frontend.beranda.agenda', compact('agendas'));
+        return view('frontend.pages.informasi.agenda', compact('agendas'));
+    }
+
+    public function galeri()
+    {
+        return view('frontend.pages.gallery');
     }
 
     public function pendaftaran_keanggotaan()
@@ -37,9 +54,15 @@ class PageController extends Controller
         return view('frontend.pages.keanggotaan.pendaftaran');
     }
 
-    public function cek_keanggotaan()
+    public function cek_keanggotaan(Request $request)
     {
-        return view('frontend.pages.keanggotaan.cek');
+        $query = $request->input('query');
+
+        $anggota = Anggota::where('nomor', $query)
+            ->orWhere('name', 'like', '%' . $query . '%')
+            ->first();
+
+        return view('frontend.pages.keanggotaan.cek', compact('anggota'));
     }
 
     public function atribut()
