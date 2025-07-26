@@ -95,7 +95,7 @@
             <div class="row align-items-center text-white">
                 <!-- Kolom Gambar Logo -->
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
-                    <img src="{{ asset('assets/logo/hcb_main.webp') }}" alt="Logo HCBSC" class="img-fluid"
+                    <img src="{{ asset('assets/logo/hcb_main.webp') }}" alt="Logo HCBSC" class="img-fluid mt-4"
                         style="max-height: 300px;">
                     <img src="{{ asset('assets/logo/hcb_bw.webp') }}" alt="Logo HCBSC" class="img-fluid mt-4"
                         style="max-height: 300px;">

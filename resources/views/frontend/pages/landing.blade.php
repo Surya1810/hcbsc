@@ -117,7 +117,7 @@
                                     </form>
                                 </div>
                                 <div class="col-md-4 text-center mb-3 mb-md-0">
-                                    <img src="{{ asset('assets/logo/hcb_bw.webp') }}" alt="HCB Logo" class="img-fluid"
+                                    <img src="{{ asset('assets/logo/hcb_bw.webp') }}" alt="HCB Logo" class="img-fluid mt-3"
                                         width="150">
                                 </div>
                             </div>

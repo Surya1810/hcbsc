@@ -9,7 +9,7 @@
 
 @section('content')
     <!-- Heroes -->
-    <section class="heroes_main">
+    <section class="heroes">
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <section class="address py-5 mx-2 mx-lg-0">

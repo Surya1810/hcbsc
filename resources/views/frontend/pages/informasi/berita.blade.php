@@ -81,12 +81,14 @@
 
                     </div>
 
-                    <div class="text-center">
-                        <iframe width="848" height="480" src="https://www.youtube.com/embed/PjjTb6UVwsk"
-                            title="Putri Azizah Haryanto, Juara I Ladies Standard Division Lomba Menembak Piala Danpaspampres"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="container my-3">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/PjjTb6UVwsk"
+                                title="Putri Azizah Haryanto, Juara I Ladies Standard Division Lomba Menembak Piala Danpaspampres"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
