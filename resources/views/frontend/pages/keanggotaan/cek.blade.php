@@ -50,11 +50,8 @@
                                                     @endif
 
                                                     @if ($anggota->nomor)
-                                                        @if (file_exists(public_path('storage/qrcodes/' . $anggota->nomor . '.svg')))
-                                                            <img src="{{ asset('storage/qrcodes/' . $anggota->nomor . '.svg') }}"
-                                                                alt="QR Code" class="img-fluid my-3"
-                                                                style="max-width: 200px;">
-                                                        @endif
+                                                        <img src="{{ asset('storage/qrcodes/' . $anggota->nomor . '.svg') }}"
+                                                            alt="QR Code" class="img-fluid my-3" style="max-width: 200px;">
                                                     @endif
                                                 </div>
 
