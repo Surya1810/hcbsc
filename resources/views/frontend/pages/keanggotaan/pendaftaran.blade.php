@@ -12,7 +12,7 @@
     <section class="heroes">
         <div class="container pb-3">
             <div class="row justify-content-center ">
-                <div class="col-12 col-md-10" style="margin-top: 7rem">
+                <div class="col-12 col-md-10 mt-5">
                     <form action="{{ route('anggota.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
@@ -140,21 +140,111 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="col-12">
-                                                <label for="prestasi"
-                                                    class="mb-0 form-label col-form-label-sm">Prestasi</label>
-                                                <textarea name="prestasi" id="prestasi" rows="5" class="w-100" placeholder="Tulis prestasi anda..."></textarea>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jabatan_1"
+                                                        class="mb-0 form-label col-form-label-sm">Jabatan dalam
+                                                        HCBSC</label>
+                                                    <input type="text"
+                                                        class="form-control @error('jabatan_1') is-invalid @enderror"
+                                                        id="jabatan_1" name="jabatan_1" placeholder="Tulis jabatan anda"
+                                                        value="{{ old('jabatan_1') }}">
+                                                    @error('jabatan_1')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
                                             </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jabatan_2"
+                                                        class="mb-0 form-label col-form-label-sm">Jabatan dalam
+                                                        Pengcab/Pengprov/PB</label>
+                                                    <input type="text"
+                                                        class="form-control @error('jabatan_2') is-invalid @enderror"
+                                                        id="jabatan_2" name="jabatan_2" placeholder="Tulis jabatan anda"
+                                                        value="{{ old('jabatan_2') }}">
+                                                    @error('jabatan_2')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label col-form-label-sm">Prestasi 1</label>
+                                                <div class="row g-2">
+                                                    <div class="col-md-5">
+                                                        <input type="text" name="prestasi_1_event"
+                                                            class="form-control" placeholder="Nama Event/Lomba"
+                                                            value="{{ old('prestasi_1_event', $anggota->prestasi_1_event ?? '') }}">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <input type="text" name="prestasi_1_tahun"
+                                                            class="form-control" placeholder="Tahun"
+                                                            value="{{ old('prestasi_1_tahun', $anggota->prestasi_1_tahun ?? '') }}">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="text" name="prestasi_1_peringkat"
+                                                            class="form-control" placeholder="Peringkat"
+                                                            value="{{ old('prestasi_1_peringkat', $anggota->prestasi_1_peringkat ?? '') }}">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Prestasi 2 -->
+                                            <div class="col-12">
+                                                <label class="form-label col-form-label-sm">Prestasi 2</label>
+                                                <div class="row g-2">
+                                                    <div class="col-md-5">
+                                                        <input type="text" name="prestasi_2_event"
+                                                            class="form-control" placeholder="Nama Event/Lomba"
+                                                            value="{{ old('prestasi_2_event', $anggota->prestasi_2_event ?? '') }}">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <input type="text" name="prestasi_2_tahun"
+                                                            class="form-control" placeholder="Tahun"
+                                                            value="{{ old('prestasi_2_tahun', $anggota->prestasi_2_tahun ?? '') }}">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="text" name="prestasi_2_peringkat"
+                                                            class="form-control" placeholder="Peringkat"
+                                                            value="{{ old('prestasi_2_peringkat', $anggota->prestasi_2_peringkat ?? '') }}">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Prestasi 3 -->
+                                            <div class="col-12">
+                                                <label class="form-label col-form-label-sm">Prestasi 3</label>
+                                                <div class="row g-2">
+                                                    <div class="col-md-5">
+                                                        <input type="text" name="prestasi_3_event"
+                                                            class="form-control" placeholder="Nama Event/Lomba"
+                                                            value="{{ old('prestasi_3_event', $anggota->prestasi_3_event ?? '') }}">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <input type="text" name="prestasi_3_tahun"
+                                                            class="form-control" placeholder="Tahun"
+                                                            value="{{ old('prestasi_3_tahun', $anggota->prestasi_3_tahun ?? '') }}">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="text" name="prestasi_3_peringkat"
+                                                            class="form-control" placeholder="Peringkat"
+                                                            value="{{ old('prestasi_3_peringkat', $anggota->prestasi_3_peringkat ?? '') }}">
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="col-12 col-md-4">
                                                 <div class="input-group mb-3">
                                                     <div class="custom-file">
                                                         <label class="mb-0 form-label col-form-label-sm"
                                                             for="ktp">KTP
-                                                            <small class="text-danger">*format PDF</small>
                                                         </label>
                                                         <input class="form-control @error('ktp') is-invalid @enderror"
-                                                            type="file" id="ktp" name="ktp"
-                                                            accept="application/pdf" required>
+                                                            type="file" id="ktp" name="ktp" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -163,11 +253,11 @@
                                                     <div class="custom-file">
                                                         <label class="mb-0 form-label col-form-label-sm"
                                                             for="kta">Upload KTA
-                                                            <small class="text-danger">*gabungkan dalam 1 file PDF</small>
+                                                            <small class="text-danger">*gabungkan 1
+                                                                file, bila ada</small>
                                                         </label>
                                                         <input class="form-control @error('kta') is-invalid @enderror"
-                                                            type="file" id="kta" name="kta"
-                                                            accept="application/pdf" required>
+                                                            type="file" id="kta" name="kta">
                                                     </div>
                                                 </div>
                                             </div>
@@ -177,8 +267,6 @@
                                                         <label class="mb-0 form-label col-form-label-sm"
                                                             for="image">Pas
                                                             Foto
-                                                            <small class="text-danger">*format
-                                                                png,jpeg,jpg,webp</small>
                                                         </label>
                                                         <input class="form-control @error('image') is-invalid @enderror"
                                                             type="file" id="image" name="image"

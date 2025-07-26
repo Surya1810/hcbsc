@@ -11,49 +11,22 @@
     <!-- Heroes -->
     <section class="heroes_main d-flex align-items-center">
         <div class="container-fluid">
-            <!-- Wrapper seluruh konten -->
             <div class="row justify-content-center align-items-start">
-
-                <!-- Baris Logo Kecil -->
-                <div class="col-12 mb-5">
-                    <div class="row justify-content-center g-1">
-                        <div class="col-1 col-sm-1 col-md-1 d-flex justify-content-center">
-                            <img src="{{ asset('assets/logo/ipsc.webp') }}" alt="Logo" class="img-fluid"
-                                style="max-height: 75px;">
-                        </div>
-                        <div class="col-1 col-sm-1 col-md-1 d-flex justify-content-center">
-                            <img src="{{ asset('assets/logo/wrabf.webp') }}" alt="Logo" class="img-fluid"
-                                style="max-height: 75px;">
-                        </div>
-                        <div class="col-1 col-sm-1 col-md-1 d-flex justify-content-center">
-                            <img src="{{ asset('assets/logo/issf.webp') }}" alt="Logo" class="img-fluid"
-                                style="max-height: 75px;">
-                        </div>
-                        <div class="col-1 col-sm-1 col-md-1 d-flex justify-content-center">
-                            <img src="{{ asset('assets/logo/imssu.webp') }}" alt="Logo" class="img-fluid"
-                                style="max-height: 75px;">
-                        </div>
-                        <div class="col-1 col-sm-1 col-md-1 d-flex justify-content-center">
-                            <img src="{{ asset('assets/logo/koni_jabar.webp') }}" alt="Logo" class="img-fluid"
-                                style="max-height: 75px;">
-                        </div>
-                        <div class="col-1 col-sm-1 col-md-1 d-flex justify-content-center">
-                            <img src="{{ asset('assets/logo/perbakin.webp') }}" alt="Logo" class="img-fluid"
-                                style="max-height: 75px;">
-                        </div>
-                        <div class="col-1 col-sm-1 col-md-1 d-flex justify-content-center">
-                            <img src="{{ asset('assets/logo/perbakin_jabar.webp') }}" alt="Logo" class="img-fluid"
-                                style="max-height: 75px;">
-                        </div>
-                        <div class="col-1 col-sm-1 col-md-1 d-flex justify-content-center">
-                            <img src="{{ asset('assets/logo/hcb.webp') }}" alt="Logo" class="img-fluid"
-                                style="max-height: 75px;">
-                        </div>
+                <!-- Logo Bar -->
+                <div class="col-12">
+                    <div class="logo-row">
+                        <img src="{{ asset('assets/logo/ipsc.webp') }}" alt="Logo IPSC">
+                        <img src="{{ asset('assets/logo/wrabf.webp') }}" alt="Logo WRABF">
+                        <img src="{{ asset('assets/logo/issf.webp') }}" alt="Logo ISSF">
+                        <img src="{{ asset('assets/logo/imssu.webp') }}" alt="Logo IMSSU">
+                        <img src="{{ asset('assets/logo/koni_jabar.webp') }}" alt="Logo KONI Jabar">
+                        <img src="{{ asset('assets/logo/perbakin.webp') }}" alt="Logo PERBAKIN">
+                        <img src="{{ asset('assets/logo/perbakin_jabar.webp') }}" alt="Logo PERBAKIN Jabar">
                     </div>
                 </div>
 
                 <!-- Gambar Utama -->
-                <div class="col-12">
+                <div class="col-12 main-hero-img mt-4">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-lg-6 text-center mb-4 mb-lg-0">
                             <img src="{{ asset('assets/logo/hcb_main.webp') }}" class="img-fluid" alt="HCBSC"
@@ -65,7 +38,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -84,8 +56,8 @@
 
                     <div class="row align-items-center mb-5">
                         <div class="col-md-4 text-center mb-3 mb-md-0">
-                            <img src="{{ asset('assets/photo/komjen_rudy.webp') }}" class="img-fluid rounded"
-                                alt="Komjen" style="max-width: 70%">
+                            <img src="{{ asset('assets/photo/komjen_rudy.webp') }}" class="img-fluid rounded" alt="Komjen"
+                                style="max-width: 70%">
                         </div>
                         <div class="col-md-8">
                             <p class="fs-5 text-white">

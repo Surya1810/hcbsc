@@ -61,7 +61,7 @@
 <body>
     <div class="wrapper">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <nav class="navbar navbar-scrolled navbar-expand-lg navbar-dark fixed-top" id="navbar">
             <div class="container-fluid px-lg-5 py-2">
                 <a class="navbar-brand" href="{{ route('landing') }}">
                     <img src="{{ asset('assets/logo/hcb_main.webp') }}" alt="HCBSC" height="50">
@@ -167,7 +167,7 @@
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="https://wa.me/6281318554360" target="_blank"
                                     class="nav-link p-0 text-white"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>
-                                    0813 1855 4360 - Admin</a>
+                                    +62 821 2600 0126 - Admin</a>
                             </li>
                         </ul>
                     </div>
@@ -294,7 +294,7 @@
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
 
     <!-- Navbar -->
-    <script>
+    {{-- <script>
         const navEl = document.querySelector('.navbar');
         var element = document.getElementById("homee");
 
@@ -307,7 +307,7 @@
                 navEl.classList.remove('navbar-scrolled');
             }
         })
-    </script>
+    </script> --}}
 
     <!-- Back to Top Button -->
     <script>

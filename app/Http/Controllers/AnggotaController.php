@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Anggota;
+use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Laravel\Facades\Image;
@@ -41,10 +42,12 @@ class AnggotaController extends Controller
             'address' => 'required|string|max:255',
             'pengcab' => 'required|string|max:100',
             'pengprov' => 'required|string|max:100',
+            'jabatan_1' => 'nullable|string|max:100',
+            'jabatan_2' => 'nullable|string|max:100',
             'prestasi' => 'nullable|string|max:255',
             'image' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
-            'ktp' => 'required|file|mimes:pdf|max:2048',
-            'kta' => 'required|file|mimes:pdf|max:2048',
+            'ktp' => 'required|file|max:2048',
+            'kta' => 'nullable|file|max:2048',
         ]);
         // ==== Simpan image utama ====
         $image = $request->file('image');
@@ -83,7 +86,19 @@ class AnggotaController extends Controller
         $anggota->address = $request->address;
         $anggota->pengcab = $request->pengcab;
         $anggota->pengprov = $request->pengprov;
-        $anggota->prestasi = $request->prestasi;
+        $anggota->prestasi_1_event = $request->prestasi_1_event;
+        $anggota->prestasi_1_tahun = $request->prestasi_1_tahun;
+        $anggota->prestasi_1_peringkat = $request->prestasi_1_peringkat;
+
+        $anggota->prestasi_2_event = $request->prestasi_2_event;
+        $anggota->prestasi_2_tahun = $request->prestasi_2_tahun;
+        $anggota->prestasi_2_peringkat = $request->prestasi_2_peringkat;
+
+        $anggota->prestasi_3_event = $request->prestasi_3_event;
+        $anggota->prestasi_3_tahun = $request->prestasi_3_tahun;
+        $anggota->prestasi_3_peringkat = $request->prestasi_3_peringkat;
+        $anggota->jabatan_1 = $request->jabatan_1;
+        $anggota->jabatan_2 = $request->jabatan_2;
         $anggota->image = $imageName;
         $anggota->ktp = $ktpName;
         $anggota->kta = $ktaName;
@@ -140,6 +155,7 @@ class AnggotaController extends Controller
         $anggota->status = 'verified';
         $anggota->nomor = $nomor;
         $anggota->qr_code = $anggota->nomor . '.png';
+        $anggota->active_until = Carbon::now()->addYears(1);
         $anggota->save();
 
 

@@ -12,7 +12,7 @@
     <section class="heroes">
         <div class="container pb-3">
             <div class="row justify-content-center ">
-                <div class="col-12 col-md-10" style="margin-top: 7rem">
+                <div class="col-12 col-md-10 mt-5">
                     <div class="card glass-card rounded-4">
                         <div class="card-body">
                             <h1 class="text-center text-stroke-primary"><strong>Tentang HCBSC</strong></h1>
@@ -90,8 +90,7 @@
         </div>
     </section>
 
-    <section class="d-flex align-items-center justify-content-center"
-        style="min-height: 100svh; background-color: #212121;">
+    <section class="d-flex align-items-center justify-content-center" style="min-height: 100svh; background-color: #212121;">
         <div class="container">
             <div class="row align-items-center text-white">
                 <!-- Kolom Gambar Logo -->

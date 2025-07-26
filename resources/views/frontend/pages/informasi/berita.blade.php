@@ -12,7 +12,7 @@
     <section class="heroes">
         <div class="container pb-3">
             <div class="row justify-content-center ">
-                <div class="col-12" style="margin-top: 7rem">
+                <div class="col-12 mt-5">
                     <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-primary">BERITA HCBSC</h1>
                     <!-- Carousel -->
                     <div id="carouselExampleCaptions" class="carousel slide mb-3">
@@ -79,6 +79,14 @@
                             {{ $beritas->links() }}
                         </div>
 
+                    </div>
+
+                    <div class="text-center">
+                        <iframe width="848" height="480" src="https://www.youtube.com/embed/PjjTb6UVwsk"
+                            title="Putri Azizah Haryanto, Juara I Ladies Standard Division Lomba Menembak Piala Danpaspampres"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

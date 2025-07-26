@@ -13,6 +13,7 @@ body {
     height: -webkit-fill-available;
     background-color: #ffffff;
     overflow-x: hidden;
+    padding-top: 95px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -134,7 +135,7 @@ body::-webkit-scrollbar {
 
 /* HEROES */
 .heroes_main {
-    height: 100svh;
+    height: 85svh;
     width: 100svw;
     background-image: url(/assets/background/background.webp);
     background-position: center center;
@@ -155,6 +156,30 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+.logo-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.logo-row img {
+    max-height: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .logo-row img {
+        max-height: 40px;
+    }
+
+    .main-hero-img img {
+        max-width: 75% !important;
+    }
 }
 
 /* Text */

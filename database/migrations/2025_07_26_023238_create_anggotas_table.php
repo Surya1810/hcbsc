@@ -23,14 +23,28 @@ return new class extends Migration
             $table->text('address');
 
             $table->string('pengcab', 100);
+            $table->string('jabatan_1', 100)->nullable();
+            $table->string('jabatan_2', 100)->nullable();
             $table->string('pengprov', 100);
-            $table->text('prestasi')->nullable();
+
+            $table->string('prestasi_1_event')->nullable();
+            $table->string('prestasi_1_tahun')->nullable();
+            $table->string('prestasi_1_peringkat')->nullable();
+
+            $table->string('prestasi_2_event')->nullable();
+            $table->string('prestasi_2_tahun')->nullable();
+            $table->string('prestasi_2_peringkat')->nullable();
+
+            $table->string('prestasi_3_event')->nullable();
+            $table->string('prestasi_3_tahun')->nullable();
+            $table->string('prestasi_3_peringkat')->nullable();
 
             $table->string('qr_code')->nullable();
             $table->string('image')->nullable(); // nama file foto
             $table->string('ktp')->nullable();   // nama file KTP (pdf)
             $table->string('kta')->nullable();   // nama file KTA (pdf)
             $table->enum('status', ['pending', 'verified', 'rejected'])->default('pending');
+            $table->date('active_until')->nullable();
 
             $table->timestamps();
         });

@@ -12,7 +12,7 @@
         <section class="heroes">
             <div class="container pb-3">
                 <div class="row justify-content-center ">
-                    <div class="col-12 col-md-10" style="margin-top: 7rem">
+                    <div class="col-12 col-md-10 mt-5">
                         <div class="card glass-card-dark rounded-4">
                             <div class="card-body">
                                 <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-primary">Keanggotaan HCB Shooting Club
@@ -59,9 +59,27 @@
                                                 <div class="col-md-8">
                                                     <div class="card bg-dark text-white border-light">
                                                         <div class="card-body">
-                                                            <h4 class="mb-3 text-warning"><strong>Data Diri Anggota</strong>
+                                                            <h4
+                                                                class="mb-3 d-flex justify-content-between align-items-center">
+                                                                <span class="text-warning"><strong>Data Diri
+                                                                        Anggota</strong></span>
+                                                                @if ($anggota->active_until && $anggota->active_until->isFuture())
+                                                                    <span class="badge bg-success">
+                                                                        Aktif
+                                                                    </span>
+                                                                @else
+                                                                    <span class="badge bg-danger">Tidak Aktif</span>
+                                                                @endif
                                                             </h4>
                                                             <dl class="row mb-0">
+                                                                <dt class="col-sm-4">Terdaftar sejak</dt>
+                                                                <dd class="col-sm-8">
+                                                                    {{ $anggota->created_at->format('d-m-Y') }}</dd>
+
+                                                                <dt class="col-sm-4">Berlaku hingga</dt>
+                                                                <dd class="col-sm-8">
+                                                                    {{ $anggota->active_until->format('d-m-Y') }}</dd>
+
                                                                 <dt class="col-sm-4">Nomor</dt>
                                                                 <dd class="col-sm-8">{{ $anggota->nomor }}</dd>
 
@@ -86,7 +104,28 @@
                                                                 <dd class="col-sm-8">{{ $anggota->pengprov }}</dd>
                                                                 <dt class="col-sm-4">Prestasi</dt>
                                                                 <dd class="col-sm-8">
-                                                                    @isset($anggota->prestasi)
+                                                                    @isset($anggota->prestasi_1_event)
+                                                                        @foreach (range(1, 3) as $i)
+                                                                            @php
+                                                                                $event =
+                                                                                    $anggota->{'prestasi_' .
+                                                                                        $i .
+                                                                                        '_event'};
+                                                                                $tahun =
+                                                                                    $anggota->{'prestasi_' .
+                                                                                        $i .
+                                                                                        '_tahun'};
+                                                                                $peringkat =
+                                                                                    $anggota->{'prestasi_' .
+                                                                                        $i .
+                                                                                        '_peringkat'};
+                                                                            @endphp
+                                                                            @if ($event || $tahun || $peringkat)
+                                                                                <div>{{ $event }} - {{ $tahun }}
+                                                                                    ({{ $peringkat }})
+                                                                                </div>
+                                                                            @endif
+                                                                        @endforeach
                                                                     @else
                                                                         -
                                                                     @endisset
