@@ -12,6 +12,7 @@
     <section class="heroes">
         <div class="container pb-3">
             <div class="row justify-content-center ">
+                <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-primary">Pendaftaran Keanggotaan</h1>
                 <div class="col-12 col-md-10 mt-5">
                     <form action="{{ route('anggota.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
