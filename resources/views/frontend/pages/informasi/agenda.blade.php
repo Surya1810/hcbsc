@@ -36,7 +36,12 @@
                                             <td>{{ $agenda->penyelenggara }}</td>
                                             <td>{{ $agenda->jam->format('H:i') }}</td>
                                             <td>{{ $agenda->lokasi }}</td>
-                                            <td>{{ $agenda->detail }}</td>
+                                            <td>
+                                                @isset($agenda->detail)
+                                                    {{ $agenda->detail }}
+                                                @else-
+                                                @endisset
+                                            </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
