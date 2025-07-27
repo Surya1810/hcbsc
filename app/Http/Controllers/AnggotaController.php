@@ -44,6 +44,8 @@ class AnggotaController extends Controller
             'pengprov' => 'required|string|max:100',
             'jabatan_1' => 'nullable|string|max:100',
             'jabatan_2' => 'nullable|string|max:100',
+            'jabatan_3' => 'nullable|string|max:100',
+            'jabatan_4' => 'nullable|string|max:100',
             'prestasi' => 'nullable|string|max:255',
             'image' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
             'ktp' => 'required|file|max:2048',
@@ -97,8 +99,11 @@ class AnggotaController extends Controller
         $anggota->prestasi_3_event = $request->prestasi_3_event;
         $anggota->prestasi_3_tahun = $request->prestasi_3_tahun;
         $anggota->prestasi_3_peringkat = $request->prestasi_3_peringkat;
-        $anggota->jabatan_1 = $request->jabatan_1;
-        $anggota->jabatan_2 = $request->jabatan_2;
+        $anggota->jabatan_hcbsc = $request->jabatan_1;
+        $anggota->jabatan_pengcab = $request->jabatan_2;
+        $anggota->jabatan_pengprov = $request->jabatan_3;
+        $anggota->jabatan_pb = $request->jabatan_4;
+        $anggota->ukuran = $request->ukuran;
         $anggota->image = $imageName;
         $anggota->ktp = $ktpName;
         $anggota->kta = $ktaName;

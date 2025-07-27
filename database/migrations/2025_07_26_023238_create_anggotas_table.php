@@ -23,8 +23,10 @@ return new class extends Migration
             $table->text('address');
 
             $table->string('pengcab', 100);
-            $table->string('jabatan_1', 100)->nullable();
-            $table->string('jabatan_2', 100)->nullable();
+            $table->string('jabatan_hcbsc', 100)->nullable();
+            $table->string('jabatan_pengcab', 100)->nullable();
+            $table->string('jabatan_pengprov', 100)->nullable();
+            $table->string('jabatan_pb', 100)->nullable();
             $table->string('pengprov', 100);
 
             $table->string('prestasi_1_event')->nullable();
@@ -38,6 +40,7 @@ return new class extends Migration
             $table->string('prestasi_3_event')->nullable();
             $table->string('prestasi_3_tahun')->nullable();
             $table->string('prestasi_3_peringkat')->nullable();
+            $table->string('ukuran')->nullable();
 
             $table->string('qr_code')->nullable();
             $table->string('image')->nullable(); // nama file foto

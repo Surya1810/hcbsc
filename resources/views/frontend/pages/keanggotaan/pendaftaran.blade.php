@@ -80,7 +80,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label for="darah" class="mb-0 form-label col-form-label-sm">Golongan
                                                         Darah</label>
@@ -90,6 +90,21 @@
                                                         placeholder="Tulis golongan darah anda" value="{{ old('darah') }}"
                                                         required>
                                                     @error('darah')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="ukuran" class="mb-0 form-label col-form-label-sm">Ukuran
+                                                        Baju</label>
+                                                    <input type="text"
+                                                        class="form-control @error('ukuran') is-invalid @enderror"
+                                                        id="ukuran" name="ukuran" placeholder="Tulis ukuran baju anda"
+                                                        value="{{ old('ukuran') }}" required>
+                                                    @error('ukuran')
                                                         <span class="invalid-feedback" role="alert">
                                                             <strong>{{ $message }}</strong>
                                                         </span>
@@ -161,12 +176,43 @@
                                                 <div class="form-group">
                                                     <label for="jabatan_2"
                                                         class="mb-0 form-label col-form-label-sm">Jabatan dalam
-                                                        Pengcab/Pengprov/PB</label>
+                                                        Pengcab</label>
                                                     <input type="text"
                                                         class="form-control @error('jabatan_2') is-invalid @enderror"
                                                         id="jabatan_2" name="jabatan_2" placeholder="Tulis jabatan anda"
                                                         value="{{ old('jabatan_2') }}">
                                                     @error('jabatan_2')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jabatan_3"
+                                                        class="mb-0 form-label col-form-label-sm">Jabatan dalam
+                                                        Pengprov</label>
+                                                    <input type="text"
+                                                        class="form-control @error('jabatan_3') is-invalid @enderror"
+                                                        id="jabatan_3" name="jabatan_3" placeholder="Tulis jabatan anda"
+                                                        value="{{ old('jabatan_3') }}">
+                                                    @error('jabatan_3')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jabatan_4"
+                                                        class="mb-0 form-label col-form-label-sm">Jabatan dalam PB</label>
+                                                    <input type="text"
+                                                        class="form-control @error('jabatan_4') is-invalid @enderror"
+                                                        id="jabatan_4" name="jabatan_4" placeholder="Tulis jabatan anda"
+                                                        value="{{ old('jabatan_4') }}">
+                                                    @error('jabatan_4')
                                                         <span class="invalid-feedback" role="alert">
                                                             <strong>{{ $message }}</strong>
                                                         </span>
