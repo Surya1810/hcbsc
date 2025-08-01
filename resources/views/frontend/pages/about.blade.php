@@ -15,7 +15,7 @@
                 <div class="col-12 col-md-10 mt-5">
                     <div class="card glass-card rounded-4">
                         <div class="card-body">
-                            <h1 class="text-center text-stroke-primary"><strong>Tentang HCBSC</strong></h1>
+                            <h1 class="text-center text-stroke-hcb"><strong>Tentang HCBSC</strong></h1>
 
                             <h3 class="text-black mt-3"><strong>Harley Club Bandoeng Shooting Club (HCBSC)</strong></h3>
                             <p class="text-black mt-3">
@@ -103,13 +103,13 @@
 
                 <!-- Kolom Penjelasan Filosofi -->
                 <div class="col-12 col-md-8 py-4">
-                    <h3 class="fw-bold text-warning">Filosofi Logo</h3>
+                    <h3 class="fw-bold text-white">Filosofi Logo</h3>
                     <p>
                         Logo HCB Shooting Club ini menggunakan dasar bentuk & tulisan dari logo HCB utama agar tidak
                         menghilangkan unsur dari logo HCB itu sendiri, selain itu style logo retro dipilih agar sesuai
                         dengan konsep utamanya yang sudah ada dari 1960. ditambah beberapa visualisasi lain.
                     </p>
-                    <h6 class="fw-bold text-warning">Ribbon/Pita</h6>
+                    <h6 class="fw-bold text-white">Ribbon/Pita</h6>
                     <p>
                         Ribbon sering digunakan dalam medali dan penghargaan. Dalam logo, ini merepresentasikan penghormatan
                         terhadap nilai, pencapaian, dan dedikasi anggota. Menandakan bahwa klub menjunjung tinggi
@@ -118,13 +118,13 @@
                         persaudaraan dan solidaritas antar anggota yang merupakan simbol dari keterikatan dan kekompakan
                         dalam satu tujuan bersama.
                     </p>
-                    <h6 class="fw-bold text-warning">3 Bintang</h6>
+                    <h6 class="fw-bold text-white">3 Bintang</h6>
                     <p>
                         Adanya 3 bintang dalam logo ini merepresentasikan dari tagline club HCBSC yang berbunyi "Silih Asah,
                         Silih Asih, Silih Asuh" yang dimana posisi dari bintang kedua lebih tinggi dari posisi bintang
                         lainnya diartikan bahwa Silih Asih (Saling Peduli) merupakan hal yang diutamakan dalam klub ini.
                     </p>
-                    <h6 class="fw-bold text-warning">Bendera Indonesia</h6>
+                    <h6 class="fw-bold text-white">Bendera Indonesia</h6>
                     <p>
                         Posisi Bendera Indonesia ini berapa di dalam bentuk utama dari logo ini yang mencerminkan semangat
                         kebangsaan dan rasa cinta tanah air. Ini menunjukkan bahwa setiap kegiatan atau identitas organisasi
@@ -133,12 +133,12 @@
                         dan ketertiban negara. Dalam konteks klub motor atau shooting club ini penting untuk menekankan
                         bahwa aktivitas kami tetap dalam koridor legal dan etis.
                     </p>
-                    <h6 class="fw-bold text-warning">Senapan & Handgun</h6>
+                    <h6 class="fw-bold text-white">Senapan & Handgun</h6>
                     <p>
                         Senapan silang menggambarkan kegiatan utama dari klub ini. Menegaskan identitas klub sebagai
                         komunitas yang tidak hanya berkendara, tetapi juga menembak reaksi dan berburu.
                     </p>
-                    <h6 class="fw-bold text-warning">Target/bidikan (bullseye)</h6>
+                    <h6 class="fw-bold text-white">Target/bidikan (bullseye)</h6>
                     <p>
                         Melambangkan ketepatan, fokus, dan pengendalian diri nilai utama dalam menembak yang mengasah
                         keterampilan, konsentrasi, dan keberanian.
@@ -159,14 +159,14 @@
                             class="object-fit-cover w-100 h-100 rounded-4" alt="Foto Pengurus">
 
                         <!-- Nama di bawah foto -->
-                        <div class="p-3 text-warning text-center fw-semibold">
+                        <div class="p-3 text-hcb text-center fw-semibold">
                             Nama Pengurus
                             <br>
                             <i>Jabatan</i>
                         </div>
                     </div>
                 </div> --}}
-                <h1 class="text-center text-stroke-primary"><strong>Susunan Pengurus</strong></h1>
+                <h1 class="text-center text-stroke-hcb"><strong>Susunan Pengurus</strong></h1>
                 <div class="col-12 col-md-10">
                     <div class="card glass-card rounded-4">
                         <div class="card-body">

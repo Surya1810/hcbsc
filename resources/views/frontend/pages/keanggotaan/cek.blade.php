@@ -15,11 +15,11 @@
                     <div class="col-12 col-md-10 mt-5">
                         <div class="card glass-card-dark rounded-4">
                             <div class="card-body">
-                                <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-primary">Keanggotaan HCB Shooting Club
+                                <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-hcb">Keanggotaan HCB Shooting Club
                                 </h1>
                                 <div class="row align-items-center mb-4">
                                     <div class="col-md-8">
-                                        <p class="text-warning">Hanya anggota resmi dan asli <i><strong>HCB Shooting
+                                        <p class="text-white">Hanya anggota resmi dan asli <i><strong>HCB Shooting
                                                     Club</strong></i> yang
                                             terdaftar di website ini.</p>
                                         <form action="{{ route('keanggotaan.cek') }}" method="GET">
@@ -31,7 +31,7 @@
                                         </form>
                                     </div>
                                     <div class="col-md-4 text-center mb-3 mb-md-0">
-                                        <img src="{{ asset('assets/logo/hcb_bw.webp') }}" alt="HCB Logo"
+                                        <img src="{{ asset('assets/logo/hcb_gold.webp') }}" alt="HCB Logo"
                                             class="img-fluid mt-3" width="150">
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@
                                                         <div class="card-body">
                                                             <h4
                                                                 class="mb-3 d-flex justify-content-between align-items-center">
-                                                                <span class="text-warning"><strong>Data Diri
+                                                                <span class="text-hcb"><strong>Data Diri
                                                                         Anggota</strong></span>
                                                                 @if ($anggota->active_until && $anggota->active_until->isFuture())
                                                                     <span class="badge bg-success">

@@ -15,7 +15,7 @@
                 <div class="col-12 col-md-10 mt-5">
                     <div class="card glass-card rounded-4">
                         <div class="card-body">
-                            <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-primary">Agenda Kegiatan</h1>
+                            <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-hcb">Agenda Kegiatan</h1>
 
                             <table id="agendaTable" class="table table-striped table-bordered">
                                 <thead>

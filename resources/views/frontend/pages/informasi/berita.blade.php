@@ -13,7 +13,7 @@
         <div class="container pb-3">
             <div class="row justify-content-center ">
                 <div class="col-12 mt-5">
-                    <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-primary">BERITA HCBSC</h1>
+                    <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-hcb">BERITA HCBSC</h1>
                     <!-- Carousel -->
                     <div id="carouselExampleCaptions" class="carousel slide mb-3">
                         <div class="carousel-inner">

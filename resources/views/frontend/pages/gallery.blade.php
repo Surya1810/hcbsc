@@ -11,7 +11,7 @@
     <!-- Gallery -->
     <section style="min-width: 100svw;background-color: #212121;" class="py-5">
         <div class="container">
-            <h2 class="text-warning text-center mb-5"><strong>Foto</strong></h2>
+            <h2 class="text-hcb text-center mb-5"><strong>Foto</strong></h2>
             <div class="row g-2">
 
                 <!-- Portrait -->
@@ -182,7 +182,7 @@
                     </div>
                 </div>
 
-                <h2 class="text-warning text-center mt-5"><strong>Video</strong></h2>
+                <h2 class="text-hcb text-center mt-5"><strong>Video</strong></h2>
                 <div class="row g-2 justify-content-center">
 
                     <div class="col-12 col-md-4">

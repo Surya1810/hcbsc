@@ -39,6 +39,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!-- Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
 
     <!-- style -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
@@ -66,7 +68,7 @@
                 <a class="navbar-brand" href="{{ route('landing') }}">
                     <img src="{{ asset('assets/logo/hcb_main.webp') }}" alt="HCBSC" height="50">
                 </a>
-                <h4 class="hcb-link">HCB Shooting Club</h4>
+                <h4 class="text-hcb">HCB Shooting Club</h4>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -154,9 +156,9 @@
                         <a aria-current="page" onclick="backToTop()" id="homee"
                             class="d-flex align-items-center mb-3 text-decoration-none">
                             <img src="{{ asset('assets/logo/hcb_main.webp') }}" alt="HCBSC" height="64px">
-                            <h3 class="text-warning">HCB Shooting Club</h3>
+                            <h3 class="text-hcb">HCB Shooting Club</h3>
                         </a>
-                        <p class="text-warning"><strong>Sekretariat</strong></p>
+                        <p class="text-hcb"><strong>Sekretariat</strong></p>
                         <ul class="nav flex-column text-white">
                             <li class="nav-item mb-2">
                                 <p><strong>HCB Shooting Club<br></strong>Inhoftank Jati Permai, Ruko 72, Kota Bandung,
@@ -175,7 +177,7 @@
                     <div class="col-md-1"></div>
 
                     <div class="col-6 col-md-3 mb-3">
-                        <h5 class="text-warning"><strong>Informasi</strong></h5>
+                        <h5 class="text-hcb"><strong>Informasi</strong></h5>
                         <ul class="nav flex-column">
                             @if (Route::is('landing'))
                                 <li class="nav-item mb-2">
@@ -219,7 +221,7 @@
                     </div>
 
                     <div class="col-6 col-md-3 mb-3">
-                        <h5 class="text-warning"><strong>Keanggotaan</strong></h5>
+                        <h5 class="text-hcb"><strong>Keanggotaan</strong></h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="{{ route('keanggotaan.pendaftaran') }}"
                                     class="nav-link p-0 text-white">Pendaftaran</a>
@@ -248,9 +250,9 @@
                             style="margin-left: 12px"><i class="fa-brands fa-youtube fa-xl"></i></a>
                     </div>
                 </div>
-                <div class="row py-3 mt-2" style="border-top: 1px solid #e0b256;">
+                <div class="row py-3 mt-2" style="border-top: 1px solid #21395f;">
                     <small class="col-12 col-md-6 text-white text-md-start text-center">&copy; 2025
-                        <strong class="text-warning">HCBSC</strong>. All
+                        <strong class="text-hcb">HCBSC</strong>. All
                         rights
                         reserved</small>
 
@@ -273,7 +275,7 @@
         <!-- Back to top button -->
         <button type="button" class="btn btn-dark btn-floating btn-lg shadow-lg " id="btn-back-to-top"
             aria-label="Back to Top">
-            <i class="fas fa-angle-up fa-2xl text-center" style="color: #e0b256"></i>
+            <i class="fas fa-angle-up fa-2xl text-center" style="color: #fff"></i>
         </button>
     </div>
 

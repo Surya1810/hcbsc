@@ -49,7 +49,7 @@
                 <div class="card-body">
                     <div class="text-center">
                         <h2 class="text-white fw-bold mb-5"
-                            style="border-bottom: 3px solid #e0b256; display: inline-block;">
+                            style="border-bottom: 3px solid #9a0000; display: inline-block;">
                             Sambutan Kehormatan
                         </h2>
                     </div>
@@ -61,14 +61,14 @@
                         </div>
                         <div class="col-md-8">
                             <p class="fs-5 text-white">
-                                <span class="display-5 text-warning">“</span>
+                                <span class="display-5 text-hcb">“</span>
                                 Dalam dunia yang terus berubah, satu hal yang harus tetap kita jaga adalah <strong>ketajaman
                                     disiplin</strong> dan <strong>kesetiaan terhadap tujuan</strong>. HCB Shooting Club
                                 bukan hanya
                                 tempat menembak — tetapi medan untuk melatih <strong>ketepatan, konsentrasi, dan karakter
                                     kepemimpinan</strong>.
                             </p>
-                            <p class="fst-italic text-end text-warning">— Komjen Pol.Prof.DR.Rudy Heriyanto A.N.,SH.MH.MBA.,
+                            <p class="fst-italic text-end text-white">— Komjen Pol.Prof.DR.Rudy Heriyanto A.N.,SH.MH.MBA.,
                                 Pelindung
                             </p>
                         </div>
@@ -84,7 +84,7 @@
                         </div>
                         <div class="col-md-8">
                             <p class="fs-5 text-white">
-                                <span class="display-5 text-warning">“</span>
+                                <span class="display-5 text-hcb">“</span>
                                 Kepada seluruh anggota HCBSC, mari kita jadikan komunitas ini sebagai wadah untuk tumbuh,
                                 bukan
                                 hanya sebagai atlet, tetapi sebagai pribadi yang tangguh. <strong>Satu tembakan, satu
@@ -92,7 +92,7 @@
                                 — karena setiap peluru yang melesat adalah lambang dari <strong>fokus, niat, dan semangat
                                     kebersamaan</strong>.
                             </p>
-                            <p class="fst-italic text-end text-warning">— H. Cheppy, Ketua HCB Shooting Club</p>
+                            <p class="fst-italic text-end text-white">— H. Cheppy, Ketua HCB Shooting Club</p>
                         </div>
                     </div>
                 </div>
@@ -101,31 +101,31 @@
                 <div class="col-12">
                     <div class="card glass-card-dark rounded-4">
                         <div class="card-body">
-                            <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-primary">Keanggotaan HCB Shooting Club
+                            <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-hcb">Keanggotaan HCB Shooting Club
                             </h1>
                             <div class="row align-items-center mb-4">
                                 <div class="col-md-8">
-                                    <p class="text-warning">Hanya anggota resmi dan asli <i><strong>HCB Shooting
+                                    <p class="text-white">Hanya anggota resmi dan asli <i><strong>HCB Shooting
                                                 Club</strong></i> yang
                                         terdaftar di website ini.</p>
                                     <form action="{{ route('keanggotaan.cek') }}" method="GET">
                                         <div class="input-group">
                                             <input type="text" name="query" class="form-control"
                                                 placeholder="Masukkan Nama atau Nomor Keanggotaan" required>
-                                            <button type="submit" class="btn btn-warning">Cek</button>
+                                            <button type="submit" class="btn btn-danger">Cek</button>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="col-md-4 text-center mb-3 mb-md-0">
-                                    <img src="{{ asset('assets/logo/hcb_bw.webp') }}" alt="HCB Logo" class="img-fluid mt-3"
-                                        width="150">
+                                    <img src="{{ asset('assets/logo/hcb_gold.webp') }}" alt="HCB Logo"
+                                        class="img-fluid mt-3" width="150">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12">
-                    <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-primary">BERITA HCBSC</h1>
+                    <h1 class="fs-3 fw-600 mb-3 text-center text-stroke-hcb">BERITA HCBSC</h1>
                     <div class="row mt-2">
                         @foreach ($beritas as $berita)
                             <div class="col-md-6 mb-4">
@@ -156,7 +156,7 @@
                             </div>
                         @endforeach
                     </div>
-                    <a href="{{ route('berita') }}" class="btn btn-warning"><strong>Selengkapnya</strong></a>
+                    <a href="{{ route('berita') }}" class="btn btn-danger"><strong>Selengkapnya</strong></a>
                 </div>
             </div>
         </div>
@@ -165,7 +165,7 @@
     <!-- Gallery -->
     <section style="min-height: 100svh; background-color: #212121;" class="py-5">
         <div class="container text-center">
-            <h2 class="text-warning text-center mb-5"><strong>Galeri</strong></h2>
+            <h2 class="text-hcb text-center mb-5"><strong>Galeri</strong></h2>
             <div class="row g-4">
 
                 <!-- Landscape -->
@@ -224,7 +224,7 @@
                 </div>
 
             </div>
-            <a href="{{ route('galeri') }}" class="btn btn-outline-warning mt-4">Lihat Selengkapnya</a>
+            <a href="{{ route('galeri') }}" class="btn btn-outline-primary mt-4">Lihat Selengkapnya</a>
         </div>
     </section>
 @endsection

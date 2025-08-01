@@ -13,8 +13,8 @@
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <section class="address py-5 mx-2 mx-lg-0">
-                    <h1 class="text-center text-stroke-primary"><strong>Hubungi Kami</strong></h1>
-                    <div class="container container-gap-lg card-address" style="background-color: #6c1011">
+                    <h1 class="text-center text-stroke-hcb"><strong>Hubungi Kami</strong></h1>
+                    <div class="container container-gap-lg card-address" style="background-color: #9a0000">
                         <div class="row justify-content-center">
                             <div class="header col-lg-6 col-md-6 col-sm-12">
                                 <div class="text-header-address">
@@ -22,21 +22,21 @@
                                     <p>Jika Anda memiliki pertanyaan lainnya, jangan ragu untuk menghubungi kami</p>
                                 </div>
                                 <div class="text-address">
-                                    <p><strong>HCB Shooting Club</strong><br>
+                                    <p class="text-white"><strong>HCB Shooting Club</strong><br>
                                         Inhoftank Jati Permai, Ruko 72, Kota Bandung,
                                         Jawa Barat 40243</p>
                                 </div>
                                 <div class="text-footer-address">
                                     <div class="list-icon">
-                                        <h3 class="text-warning">Hotline</h3>
+                                        <h3 class="text-hcb">Hotline</h3>
                                         <div class="text-icon text-white"><i
-                                                class="small-icon fa-solid fa-phone text-warning"></i>+62 821 2600 0126
+                                                class="small-icon fa-solid fa-phone text-hcb"></i>+62 821 2600 0126
                                         </div>
                                     </div>
                                     <div class="list-icon">
-                                        <h3 class="text-warning">Email</h3>
+                                        <h3 class="text-hcb">Email</h3>
                                         <div class="text-icon text-white"><i
-                                                class="small-icon fa-solid fa-envelope text-warning"></i>hcbshootingclub@gmail.com
+                                                class="small-icon fa-solid fa-envelope text-hcb"></i>hcbshootingclub@gmail.com
                                         </div>
                                     </div>
                                 </div>
