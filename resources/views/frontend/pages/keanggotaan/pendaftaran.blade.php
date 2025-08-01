@@ -322,8 +322,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="text-center">
+                                            <button type="submit"
+                                                class="btn btn-danger rounded-5 mx-3 fw-semibold">Daftar</button>
+                                        </div>
                                     </div>
-                                    <button type="submit" class="btn btn-warning rounded-5 float-right">Daftar</button>
                                 </div>
                             </div>
                         </div>

@@ -251,9 +251,7 @@ footer {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #21395f;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-        1px 1px 0 #fff;
+    color: #fff;
 }
 .list-icon {
     margin-bottom: 16px;

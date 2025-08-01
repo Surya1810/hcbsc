@@ -26,7 +26,7 @@
                                             <div class="input-group">
                                                 <input type="text" name="query" class="form-control"
                                                     placeholder="Masukkan Nama atau Nomor Keanggotaan" required>
-                                                <button type="submit" class="btn btn-warning">Cek</button>
+                                                <button type="submit" class="btn btn-danger">Cek</button>
                                             </div>
                                         </form>
                                     </div>

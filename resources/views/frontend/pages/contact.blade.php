@@ -22,19 +22,21 @@
                                     <p>Jika Anda memiliki pertanyaan lainnya, jangan ragu untuk menghubungi kami</p>
                                 </div>
                                 <div class="text-address">
-                                    <p class="text-white"><strong>HCB Shooting Club</strong><br>
+                                    <p><strong class="text-hcb">HCB Shooting Club</strong><br>
                                         Inhoftank Jati Permai, Ruko 72, Kota Bandung,
                                         Jawa Barat 40243</p>
                                 </div>
                                 <div class="text-footer-address">
                                     <div class="list-icon">
-                                        <h3 class="text-hcb">Hotline</h3>
+                                        <h3 class="text-white">Hotline</h3>
                                         <div class="text-icon text-white"><i
-                                                class="small-icon fa-solid fa-phone text-hcb"></i>+62 821 2600 0126
+                                                class="small-icon fa-solid fa-phone text-hcb"></i>+62
+                                            821
+                                            2600 0126
                                         </div>
                                     </div>
                                     <div class="list-icon">
-                                        <h3 class="text-hcb">Email</h3>
+                                        <h3 class="text-white">Email</h3>
                                         <div class="text-icon text-white"><i
                                                 class="small-icon fa-solid fa-envelope text-hcb"></i>hcbshootingclub@gmail.com
                                         </div>
